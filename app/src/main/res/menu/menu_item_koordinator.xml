@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_item_koordinator_anaSayfa"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="always"
+        android:title="Ana Sayfa" />
+    <item
+        android:id="@+id/menu_item_koordinator_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always"
+        android:title="Search" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_item_koordinator_egitim_adi_duzenle"
+        android:icon="@drawable/ic_yapmam_gerekenler"
+        android:title="Eğitim Adı Düzenle" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_item_koordinator_soru_duzenle"
+        android:icon="@drawable/ic_belge"
+        android:title="Soru Düzenle" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_item_koordinator_cikis"
+        android:icon="@drawable/ic_cikis"
+        app:showAsAction="always"
+        android:title="Çıkış Yap" />
+
+
+
+</menu>

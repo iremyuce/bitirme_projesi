@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/giris_ekran"
+    tools:context=".egitimler">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/btnFillColor"
+        app:popupTheme="@style/Theme.Bitirme_projesi"
+        app:title="@string/app_name"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBoxegitimbir"
+        android:layout_width="393dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxegitimiki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxegitimdort"
+        android:layout_width="384dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="22dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBilgi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxegitimiki"
+        android:layout_width="395dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="26dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxegitimuc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxegitimuc"
+        android:layout_width="388dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="24dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxegitimdort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAlmanGerekenEgitimler"
+        android:layout_width="404dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="7dp"
+        android:gravity="center"
+        android:text="ALMAN GEREKEN EĞİTİMLER"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="48sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxegitimbir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewBilgi"
+        android:layout_width="383dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Lütfen Eğitim Sonuçlarınızı Görüntülemek İçin Buraya Tıklayınız"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/giris_ekran"
+    tools:context=".egitim_or_soru">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/btnFillColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/Theme.Bitirme_projesi"
+        app:title="@string/app_name" />
+
+    <Button
+        android:id="@+id/buttonEgitimAdDuzenle"
+        android:layout_width="333dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="39dp"
+        android:background="@color/white"
+        android:text="Eğitim Adı Düzenle"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSoruDuzenle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSoruDuzenle"
+        android:layout_width="340dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="202dp"
+        android:background="@color/white"
+        android:text="Soru Düzenle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

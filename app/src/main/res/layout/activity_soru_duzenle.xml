@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/giris_ekran"
+    tools:context=".soru_duzenle">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/btnFillColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/Theme.Bitirme_projesi"
+        app:title="@string/app_name" />
+
+    <EditText
+        android:id="@+id/editTextEducationName"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="23dp"
+        android:hint="Eğitim Adı"
+        app:layout_constraintBottom_toTopOf="@+id/editTextQuestion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:minHeight="48dp"/>
+
+    <EditText
+        android:id="@+id/editTextQuestion"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:hint="Soru"
+        app:layout_constraintBottom_toTopOf="@+id/editTextOptionA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:minHeight="48dp"/>
+
+    <EditText
+        android:id="@+id/editTextOptionA"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="26dp"
+        android:hint="Şık A"
+        app:layout_constraintBottom_toTopOf="@+id/editTextOptionB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:minHeight="48dp"/>
+
+    <EditText
+        android:id="@+id/editTextOptionB"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="18dp"
+        android:hint="Şık B"
+        app:layout_constraintBottom_toTopOf="@+id/editTextOptionC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:minHeight="48dp"/>
+
+    <EditText
+        android:id="@+id/editTextOptionC"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Şık C"
+        app:layout_constraintBottom_toTopOf="@+id/editTextOptionD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:minHeight="48dp"/>
+
+    <EditText
+        android:id="@+id/editTextOptionD"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Şık D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextOptionC"
+        tools:ignore="MissingConstraints"
+        android:minHeight="48dp"/>
+
+    <EditText
+        android:id="@+id/editTextAnswer"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="21dp"
+        android:hint="Cevap"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSaveQuestion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextOptionD"
+        tools:ignore="MissingConstraints"
+        android:minHeight="48dp"/>
+
+    <Button
+        android:id="@+id/buttonSaveQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="121dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="16dp"
+        android:text="Soruyu Kaydet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:minHeight="48dp"/>
+
+    <!-- Verdiğiniz kodu ekleyin -->
+    <!-- Örneğin: -->
+    <!-- <include layout="@layout/your_given_layout"-->
+</androidx.constraintlayout.widget.ConstraintLayout>

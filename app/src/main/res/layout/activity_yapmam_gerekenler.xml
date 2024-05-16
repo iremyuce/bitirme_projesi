@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/giris_ekran"
+    tools:context=".yapmam_gerekenler">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/btnFillColor"
+        app:popupTheme="@style/Theme.Bitirme_projesi"
+        app:title="@string/app_name"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewYapmamGerekenler"
+        android:layout_width="351dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="19dp"
+        android:gravity="center"
+        android:text="YAPMAN GEREKENLER"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewyuklenecekBelgeler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewEgitimler"
+        android:layout_width="263dp"
+        android:layout_height="211dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/egitim" />
+
+    <ImageView
+        android:id="@+id/imageViewyuklenecekBelgeler"
+        android:layout_width="263dp"
+        android:layout_height="211dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/belge"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewEgitimler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/belge" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

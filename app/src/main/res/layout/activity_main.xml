@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/giris_ekran"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/btnFillColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/Theme.Bitirme_projesi"
+        app:title="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="167dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="35dp"
+        android:src="@drawable/giris"
+        app:layout_constraintEnd_toStartOf="@+id/textViewHosgeldin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/giris" />
+
+    <TextView
+        android:id="@+id/textViewHosgeldin"
+        android:layout_width="162dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="235dp"
+        android:gravity="center"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewYapmamGerekenler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/imageViewBilmemGerekenler"
+        android:layout_width="172dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="197dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/bilmem_gerekenler"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewYapmamGerekenler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bilmem_gerekenler" />
+
+    <ImageView
+        android:id="@+id/imageViewYapmamGerekenler"
+        android:layout_width="172dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="206dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="35dp"
+        android:src="@drawable/yapmam_gerekenler"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/yapmam_gerekenler" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

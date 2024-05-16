@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "573658471300",
+    "project_id": "bitirme-projesi-c308a",
+    "storage_bucket": "bitirme-projesi-c308a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573658471300:android:2a03eae52b8b31422ddbd1",
+        "android_client_info": {
+          "package_name": "com.example.bitirme_projesi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfcbFTyhyWFsruS41WW8mcN7LOMtWk4Vc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

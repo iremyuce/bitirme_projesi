@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/giris_ekran"
+    tools:context=".bilmem_gerekenler">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/btnFillColor"
+        app:popupTheme="@style/Theme.Bitirme_projesi"
+        app:title="@string/app_name"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewOnyazi"
+        android:layout_width="389dp"
+        android:layout_height="248dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="13dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewYemek"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewplaka"
+        android:layout_width="134dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="19dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewCalismaAlanim"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSaat"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewYemek"
+        android:layout_width="121dp"
+        android:layout_height="101dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/yemek"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSaat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/yemek" />
+
+    <TextView
+        android:id="@+id/textViewSaat"
+        android:layout_width="134dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginBottom="11dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewBuddy"
+        app:layout_constraintStart_toEndOf="@+id/textViewplaka" />
+
+    <TextView
+        android:id="@+id/textViewKuzey"
+        android:layout_width="146dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewMete"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMete"
+        android:layout_width="129dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewServis"
+        android:layout_width="124dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewplaka"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewYemek"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/servis" />
+
+    <ImageView
+        android:id="@+id/imageViewCalismaAlanim"
+        android:layout_width="139dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/calisma_alanin"
+        app:layout_constraintBottom_toTopOf="@+id/textViewKuzey"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewBuddy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/calisma_alanin" />
+
+    <ImageView
+        android:id="@+id/imageViewBuddy"
+        android:layout_width="139dp"
+        android:layout_height="121dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/buddy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

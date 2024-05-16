@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/giris_ekran"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/btnFillColor"
+        app:popupTheme="@style/Theme.Bitirme_projesi"
+        app:title="@string/app_name"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/selectPdfButton"
+        android:layout_width="59dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="321dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="34dp"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_disabled"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pdf"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/showAllPdfButton"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="366dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="19dp"
+        android:backgroundTint="@color/red"
+        android:elevation="8dp"
+        android:text="Show All Pdf"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/selectPdfButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/uploadBtn"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="366dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="21dp"
+        android:backgroundTint="@color/red"
+        android:elevation="8dp"
+        android:text="Upload PDF"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/showAllPdfButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="171dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/fileName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pdf"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/fileName"
+        android:layout_width="315dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="62dp"
+        android:gravity="center"
+        android:paddingHorizontal="24dp"
+        android:text="@string/no_pdf_file_selected_yet"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/uploadBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:progress="59"
+        android:progressTint="@color/secondary_color"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

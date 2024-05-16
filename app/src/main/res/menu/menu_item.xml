@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_item_anaSayfa"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="always"
+        android:title="Ana Sayfa" />
+    <item
+        android:id="@+id/menu_item_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always"
+        android:title="Search" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_item_yapmamGerekenler"
+        android:icon="@drawable/ic_yapmam_gerekenler"
+        android:title="Yapmam Gerekenler" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_item_yuklenecekBelgeler"
+        android:icon="@drawable/ic_belge"
+        android:title="Yüklenecek Belgeler" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_item_egitimler"
+        android:icon="@drawable/ic_egitimler"
+        android:title="Eğitimler" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_item_cikis"
+        android:icon="@drawable/ic_cikis"
+        app:showAsAction="always"
+        android:title="Çıkış Yap" />
+    <item
+        android:id="@+id/menu_item_bilmemGerekenler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_bilmem_gerekenler"
+        android:title="Bilmem Gerekenler" />
+
+
+</menu>
